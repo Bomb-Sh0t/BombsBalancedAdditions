@@ -18,6 +18,6 @@ public class BombsAdditions implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Henlo Fabric world!");
+		LOGGER.info("Henlo world!");
 	}
 }

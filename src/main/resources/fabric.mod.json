@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "bombs-additions",
+	"version": "${version}",
+	"name": "Create: Bomb's Balanced Additions",
+	"description": "This mod adds additional options for automation of resources within Create.",
+	"authors": [
+		"BombShot0"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/bombs-additions/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.bomb.additions.BombsAdditions"
+		],
+		"client": [
+			"net.bomb.additions.BombsAdditionsClient"
+		],
+		"fabric-datagen": [
+			"net.bomb.additions.BombsAdditionsDataGenerator"
+		]
+	},
+	"mixins": [
+		"bombs-additions.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

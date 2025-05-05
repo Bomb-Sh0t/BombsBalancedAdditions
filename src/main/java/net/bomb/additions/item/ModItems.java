@@ -14,10 +14,8 @@ public class ModItems {
 
     public static final Item AMETHYST_SEED = registerItem("amethyst_seed", new Item(new FabricItemSettings()));
     public static final Item AMETHYST_DUST = registerItem("amethyst_dust", new Item(new FabricItemSettings()));
+    public static final Item GROWING_AMETHYST = registerItem("growing_amethyst", new Item(new FabricItemSettings()));
 
-    private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
-        entries.add(AMETHYST_SEED);
-    }
 
     //Method that register items to the game with the mod name
     private static Item registerItem(String name, Item item) {
@@ -27,7 +25,5 @@ public class ModItems {
     //Registers a method that holds info to use as status and logging for
     public static void registerModItems() {
         BombsAdditions.LOGGER.info("Registering mod items for "+ BombsAdditions.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
     }
 }

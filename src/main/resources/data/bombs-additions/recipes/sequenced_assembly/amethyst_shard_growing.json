@@ -1,0 +1,67 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "bombs-additions:amethyst_seed"
+  },
+  "loops": 5,
+  "results": [
+    {
+      "chance": 120.0,
+      "item": "minecraft:amethyst_shard"
+    },
+    {
+      "chance": 16.0,
+      "item": "minecraft:sugar"
+    },
+    {
+      "chance": 5.0,
+      "item": "bombs-additions:amethyst_seed"
+    },
+    {
+      "chance": 5.0,
+      "item": "minecraft:sugar"
+    },
+    {
+      "chance": 4.0,
+      "item": "bombs-additions:amethyst_seed"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "bombs-additions:growing_amethyst"
+        },
+        {
+          "amount": 8100,
+          "fluid": "minecraft:water"
+        }
+      ],
+      "results": [
+        {
+          "item": "bombs-additions:growing_amethyst"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "bombs-additions:growing_amethyst"
+        },
+        {
+          "item": "minecraft:sugar"
+        }
+      ],
+      "results": [
+        {
+          "item": "bombs-additions:growing_amethyst"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "bombs-additions:growing_amethyst"
+  }
+}

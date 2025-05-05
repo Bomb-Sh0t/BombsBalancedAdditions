@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:amethyst_shard"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "count": 1,
+      "item": "bombs-additions:amethyst_seed"
+    },
+    {
+      "chance": 0.25,
+      "item": "bombs-additions:amethyst_dust"
+    }
+  ]
+}
